@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-8c39ho#qdoqyxi2x23cav0#py3(@b4@*1)=9c1l_%_udo43t_3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.234.19.13','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['*']
 
 AUTH_USER_MODEL = 'app.CustomUser'
 
@@ -107,15 +107,15 @@ WSGI_APPLICATION = 'project3.wsgi.application'
 FRONTEND_URL = 'http://localhost:3001/'
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'scanplus',
-        'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',  
-        'PORT': '5432',     }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'scanplus',
+#         'USER': 'postgres',
+#         'PASSWORD': 'root',
+#         'HOST': 'localhost',  
+#         'PORT': '5432',     }
+# }
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',  # MySQL engine
@@ -170,6 +170,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
