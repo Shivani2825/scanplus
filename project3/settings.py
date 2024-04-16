@@ -107,26 +107,26 @@ WSGI_APPLICATION = 'project3.wsgi.application'
 FRONTEND_URL = 'http://localhost:3001/'
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'scanplus',
-#         'USER': 'postgres',
-#         'PASSWORD': 'root',
-#         'HOST': 'localhost',  
-#         'PORT': '5432',     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # MySQL engine
-        'NAME': 'scanplus',                    # Database name
-        'USER': 'kushalgarh2000',                        # MySQL username
-        'PASSWORD': 'kushalgarh2000',                    # MySQL password
-        'HOST': 'localhost',                   # MySQL host
-        'PORT': '3306',                        # MySQL port
-       
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'scanplus',
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',  
+        'PORT': '5432',     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',  # MySQL engine
+#         'NAME': 'scanplus',                    # Database name
+#         'USER': 'kushalgarh2000',                        # MySQL username
+#         'PASSWORD': 'kushalgarh2000',                    # MySQL password
+#         'HOST': 'localhost',                   # MySQL host
+#         'PORT': '3306',                        # MySQL port
+       
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
