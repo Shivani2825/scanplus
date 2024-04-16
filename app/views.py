@@ -84,7 +84,7 @@ class FileUploadAPIView(generics.CreateAPIView):
                 Vehicle Registration Date/Year, Vehicle Engine Number, Vehicle Chassis Number respectively
                 From the text: {content} , and return 'nan' if any data does not exist.''' 
         
-        llm = OpenAI(openai_api_key="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")
+        llm = OpenAI(openai_api_key="")
         prompt = PromptTemplate.from_template(template)
         
         llm_chain = LLMChain(prompt=prompt, llm=llm)
